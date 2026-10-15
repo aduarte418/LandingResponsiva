@@ -5,57 +5,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apothecaria</title>
+
+    <!--Enlace al icono de la web en la pestaña-->
+    <link rel="icon" href="images/asclepius_rod.png" type="image/png">
+
+    <!--Enlaces a las hojas de estilo de CSS-->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dark.css">
+
+    <!--Enlaces a las fuentes de Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+
+
 </head>
 
 <body>
 
     <header>
-        <h1>APOTHECARIA</h1>
 
-        <nav>
-            #inicioInicio</a>
-            #remediosRemedios</a>
-            #grimorioEl Grimorio</a>
-            #testimoniosTestimonios</a>
-            #contactoContacto</a>
-        </nav>
+            <nav id="barranav">
+                <a class="navlink" href="#inicio">Inicio</a>
+                <a class="navlink" href="#remedios">Remedios</a>
+                <a class="navlink" href="#grimorio">El Grimorio</a>
+                <a class="navlink" href="#testimonios">Testimonios</a>
+                <a class="navlink" href="#contacto">Contacto</a>
+            </nav>
+
     </header>
 
     <main>
 
         <section id="inicio">
+
+            <img id="asclepius" src="images/asclepius_rod.png" alt="Báculo de Ascolepio - Medicina" id="logo">
+
+            <h1 id="titulo">APOTHECARIA</h1>
+
             <h2>Botica · Remedios · Formulación Magistral</h2>
 
-            <p>
-                Donde la ciencia antigua y la naturaleza se unen para cuidar tu bienestar.
-            </p>
+            <p id="subtitulo">Donde la ciencia antigua y la naturaleza se unen para cuidar tu bienestar.</p>
 
-            <button>Explorar Remedios</button>
-            <button>Nuestro Grimorio</button>
+            <button class="boton">Explorar Remedios</button>
+            <button class="boton">Nuestro Grimorio</button>
+
         </section>
 
         <section id="remedios">
             <h2>Productos Destacados</h2>
 
-            <article>
-                <h3>Elixir de Caléndula</h3>
-                <p>Preparado natural para el cuidado de la piel.</p>
-                <button>Adquirir</button>
-            </article>
+            <div id="grid">
 
-            <article>
-                <h3>Tintura Herbal</h3>
-                <p>Fórmula tradicional elaborada con plantas medicinales.</p>
-                <button>Adquirir</button>
-            </article>
+                <article class="card">
+                    <h3>Elixir de Caléndula</h3>
+                    <p>Extracto puro de caléndula para regeneración cutánea. Preparado según la fórmula magistral del Códice de Avicena.</p>
+                    <button class="boton">Adquirir</button>
+                </article>
+
+                <article class="card">
+                    <h3>Tintura Herbal</h3>
+                    <p>Raíz de valeriana macerada en alcohol de grano. Alivia la tensión y favorece el sueño reparador desde tiempos ancestrales.</p>
+                    <button class="boton">Adquirir</button>
+                </article>
+
+                <article class="card">
+                    <h3>Ungüento de Árnica</h3>
+                    <p>Pomada clásica de árnica montana para golpes, contusiones y dolores musculares. Formulación artesanal de alta concentración..</p>
+                    <button class="boton">Adquirir</button>
+                </article>
+
+                <article class="card">
+                    <h3>Jarabe de Propóleo</h3>
+                    <p>Propóleo puro con extracto de tomillo y miel de romero. Defensa natural para las vías respiratorias en épocas adversas.</p>
+                    <button class="boton">Adquirir</button>
+                </article>
+
+                <article class="card">
+                    <h3>Aceite de Onagra</h3>
+                    <p>Prensado en frío, rico en ácido gamma-linolénico. Equilibrio hormonal y salud de piel desde la tradición herbolaria europea.</p>
+                    <button class="boton">Adquirir</button>
+                </article>
+
+                <article class="card">
+                    <h3>Polvo de Jengibre</h3>
+                    <p>Raíz de jengibre deshidratada y molida, de cultivo ecológico certificado. Digestivo, antiemético y fuente de calor interior.</p>
+                    <button class="boton">Adquirir</button>
+                </article>
+
+            </div>
+
         </section>
 
         <section id="grimorio">
             <h2>Nuestro Grimorio</h2>
 
-            <p>
-                Descubre la historia y el conocimiento ancestral de Apothecaria.
-            </p>
+            <p>Descubre la historia y el conocimiento ancestral de Apothecaria.</p>
+
+            <p>Desde que el Maestro Boticario Don Severino Alcántara abriera sus puertas en la calle del Pergamino en 1742, nuestra botica ha preservado el saber medicinal ancestral. Cada preparado sigue recetas copiadas a mano en nuestro Grimorio de la Salud.</p>
+
+            <p>Hoy, combinamos esa sabiduría con los más estrictos controles de calidad farmacéutica para ofreceros fórmulas magistrales, plantas medicinales de procedencia certificada y preparados galénicos elaborados en nuestro laboratorio.</p>
+
         </section>
 
         <section id="testimonios">
@@ -83,7 +135,14 @@
     </main>
 
     <footer>
-        <p>© Apothecaria. Todos los derechos reservados.</p>
+        <div id="pie">
+            <p>© 2026 Apothecaria. Todos los derechos reservados.</p>
+            <div id="cookies">
+                <p>Privacidad</p>
+                <p>Aviso legal</p>
+                <p>Cookies</p>
+            </div> 
+        </div>
     </footer>
 
 </body>

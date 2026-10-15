@@ -1,0 +1,191 @@
+/*Estilo por defecto como base para todos los elementos de la página*/
+* {
+    margin: 0.3rem;
+    box-sizing: border-box;
+    width: auto;
+}
+
+/*Estilo general para el body*/
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #eee3c9;
+       
+}
+
+/*Estilo para la barra de navegación*/
+#barranav{
+    background-color: #055704;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+    font-family: Cinzel, serif;
+    font-size: 1.24em;
+    
+}
+
+/*Estilo para los enlaces de la barra de navegación*/
+.navlink{
+    text-decoration: none;
+    color:#c9a227;
+    padding: 10px;
+}
+
+/*Estilo específico para el hover de la barra de navegación*/
+.navlink:hover {
+    background-color: #45a049;
+}
+
+/*Estilo para la zona inicio que hace de portada de la página*/
+#inicio{
+    background-color: #eee3c9;
+    padding: 1.1em 0;
+    text-align: center;
+    font-family: Cinzel, serif;
+    background: linear-gradient(to bottom, #fcf7eb, #eee3c9);
+}
+
+/*Estilo específico para el logo de Asclepio justo encima del título Apothecaria*/
+#asclepius{
+    width: 2em;
+    height: 2em;
+}
+
+/*Estilo para el título principal (Apothecaria)*/
+#titulo{
+    font-size: 3em;
+    color: #000;
+    font-family: Cinzel, serif;
+}
+
+/*Estilo concreto para el subtítulo*/
+#subtitulo{
+    font-size: 1.1em;
+    color: #000;
+    font-weight: bold;
+    margin: 0.5em;
+}
+
+/*Estilo para el h2*/
+
+h2{
+
+    font-size: 1.7em;
+    color: #000;
+    font-family: Cinzel, serif;
+    margin: 0.1em;
+}
+
+/*Estilo para los botones*/
+.boton{
+    background-color: #055704;
+    border: none;
+    color: #c9a227;
+    padding: 15px 32px;
+    font-family: Cinzel, serif;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+
+/*Estilo para el hover de los botones*/
+.boton:hover {
+    background-color: #45a049;
+
+}
+
+/*Estilo para la sección de productos*/
+#remedios{
+    
+    padding: 50px 0;
+    text-align: center;
+
+}
+
+/*Estilo para el grid*/
+#grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+
+}
+
+
+/*Estilo para cada elemento del grid (las cartas)*/
+.producto{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/*Estilo para la zona de historia de la página (llamada grimorio)*/
+#grimorio{
+    background-color: #eee3c9;
+    padding: 1em 0;
+    text-align: left;
+    justify-content: center;
+}
+
+/*Estilo para la zona de reseñas/testimonios*/
+#testimonios{
+    background-color: #eee3c9;
+    margin: 0.2em;
+    padding: 1em 0;
+    text-align: left;
+    justify-content: center;
+}
+
+
+/*Estilo para la zona de contacto*/
+#contacto{
+    background-color: #eee3c9;
+    margin: 0.2em;
+    padding: 0.5em 0;
+    text-align: left;
+    justify-content: center;
+}
+
+/*Estilo para el formulario de contacto*/
+form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+    margin-top: 20px;
+
+}
+
+/*Estilo para el pie de página*/
+#pie{
+    background-color: #013600;
+    color: #c9a227;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Cinzel, serif;
+    text-align: center;
+    padding: 0.8em;
+    margin: 0.5em;
+}
+
+/*Estilo para las cookies en el pie de página*/
+#cookies{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1em;
+    font-size: 0.9em;
+}
