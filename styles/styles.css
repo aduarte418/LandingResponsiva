@@ -69,13 +69,35 @@ body{
 }
 
 /*Estilo para el h2*/
-
 h2{
-
+    font-family: Cinzel, serif;
     font-size: 1.7em;
+    font-weight: bold;
+    color: #000;
+    margin: 0.1em;
+}
+
+/*Estilo para el h3*/
+h3{
+    font-size: 1.1em;
     color: #000;
     font-family: Cinzel, serif;
     margin: 0.1em;
+}
+
+/*Estilo general para el texto del body*/
+.pbody{
+    font-size: 1em;
+    font-family: EB Garamond, serif;
+    color: #000;
+
+}
+
+/*Estilo para el texto del footer*/
+.pfoot{
+    font-size: 1em;
+    font-family: Cinzel, serif;
+    color: #c9a227;
 }
 
 /*Estilo para los botones*/
