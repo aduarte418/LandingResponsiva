@@ -131,6 +131,14 @@ h2{
 }
 
 
+/*Estilo para el texto de cada carta del grid (descripción)*/
+.producto p{
+    font-size: 1em;
+    color: #000;
+    font-family: EB Garamond, serif;
+    margin: 0.5em;
+}
+
 /*Estilo para la zona de historia de la página (llamada grimorio)*/
 #grimorio{
     background-color: #eee3c9;
@@ -189,3 +197,6 @@ form{
     margin-top: 1em;
     font-size: 0.9em;
 }
+
+
+
