@@ -1,2 +1,234 @@
+/*
+Estilo para el tema oscuro de la página
+
+REVISARLO. CAMBIAR SOBRE TODO EL FONDO PARA QUE SEA OSCURO Y LA LETRA BLANCA
+SI ACASO, CAMBIAR TAMBIÉN LOS COLORES DE LOS BOTONES
+
+**EL CÓDIGO DE ABAJO ES POR AHORA EL MISMO QUE EL CSS NORMAL**
 
 
+* {
+    margin: 0.3rem;
+    box-sizing: border-box;
+    width: auto;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #eee3c9;
+       
+}
+
+
+#barranav{
+    background-color: #055704;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+    font-family: Cinzel, serif;
+    font-size: 1.24em;
+    
+}
+
+
+.navlink{
+    text-decoration: none;
+    color:#c9a227;
+    padding: 10px;
+}
+
+
+.navlink:hover {
+    background-color: #45a049;
+}
+
+
+#inicio{
+    background-color: #eee3c9;
+    padding: 1.1em 0;
+    text-align: center;
+    font-family: Cinzel, serif;
+    background: linear-gradient(to bottom, #fcf7eb, #eee3c9);
+}
+
+
+#asclepius{
+    width: 2em;
+    height: 2em;
+}
+
+
+#titulo{
+    font-size: 3em;
+    color: #000;
+    font-family: Cinzel, serif;
+}
+
+
+#subtitulo{
+    font-size: 1.1em;
+    color: #000;
+    font-weight: bold;
+    margin: 0.5em;
+}
+
+
+h2{
+    font-family: Cinzel, serif;
+    font-size: 1.7em;
+    font-weight: bold;
+    color: #000;
+    margin: 0.1em;
+}
+
+
+h3{
+    font-size: 1.1em;
+    color: #000;
+    font-family: Cinzel, serif;
+    margin: 0.1em;
+}
+
+
+.pbody{
+    font-size: 1em;
+    font-family: EB Garamond, serif;
+    color: #000;
+
+}
+
+
+.pfoot{
+    font-size: 1em;
+    font-family: Cinzel, serif;
+    color: #c9a227;
+}
+
+
+.boton{
+    background-color: #055704;
+    border: none;
+    color: #c9a227;
+    padding: 15px 32px;
+    font-family: Cinzel, serif;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+
+
+.boton:hover {
+    background-color: #45a049;
+
+}
+
+
+#remedios{
+    
+    padding: 50px 0;
+    text-align: center;
+
+}
+
+
+#grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+
+}
+
+
+
+.producto{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.producto p{
+    font-size: 1em;
+    color: #000;
+    font-family: EB Garamond, serif;
+    margin: 0.5em;
+}
+
+
+#grimorio{
+    background-color: #eee3c9;
+    padding: 1em 0;
+    text-align: left;
+    justify-content: center;
+}
+
+
+#testimonios{
+    background-color: #eee3c9;
+    margin: 0.2em;
+    padding: 1em 0;
+    text-align: left;
+    justify-content: center;
+}
+
+
+
+#contacto{
+    background-color: #eee3c9;
+    margin: 0.2em;
+    padding: 0.5em 0;
+    text-align: left;
+    justify-content: center;
+}
+
+
+form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+    margin-top: 20px;
+
+}
+
+
+#pie{
+    background-color: #013600;
+    color: #c9a227;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Cinzel, serif;
+    text-align: center;
+    padding: 0.8em;
+    margin: 0.5em;
+}
+
+
+#cookies{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1em;
+    font-size: 0.9em;
+}
+
+
+
+
+*/
