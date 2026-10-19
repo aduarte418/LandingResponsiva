@@ -9,14 +9,12 @@
     <!--Enlace al icono de la web en la pestaña-->
     <link rel="icon" href="images/asclepius_rod.png" type="image/png">
 
+    <!-- Enlace para Bootstrap CSS (debe ir antes de estilos propios para poder sobrescribir) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     <!--Enlaces a las hojas de estilo de CSS-->
     <link rel="stylesheet" href="styles/styles.css">
-
-    <link rel="script" href="scripts/script.js">
-
-    <!-- Enlace para Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-
-    QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <!--Enlaces a las fuentes de Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,189 +27,171 @@
         href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
         rel="stylesheet">
 
-
-
-
-
 </head>
 
 <body>
 
     <header>
-
-        <!--Contenedor/es para responsive en la barra de navegación-->
-
-        <nav id="barranav">
-            <a class="navlink" href="#inicio">Inicio</a>
-            <a class="navlink" href="#remedios">Remedios</a>
-            <a class="navlink" href="#grimorio">El Grimorio</a>
-            <a class="navlink" href="#testimonios">Testimonios</a>
-            <a class="navlink" href="#contacto">Contacto</a>
+        <!-- Barra de navegación responsive acorde a la temática de Apothecaria -->
+        <nav id="barranav" class="navbar navbar-expand-lg navbar-dark fixed-top" aria-label="Navegación principal">
+            <div class="container">
+                <a class="navbar-brand fw-bold d-flex align-items-center" href="#inicio"
+                    aria-label="Apothecaria inicio">
+                    Apothecaria
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuNavegacion">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                        <li class="nav-item"><a class="nav-link navlink" href="#inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link navlink" href="#remedios">Remedios</a></li>
+                        <li class="nav-item"><a class="nav-link navlink" href="#grimorio">El Grimorio</a></li>
+                        <li class="nav-item"><a class="nav-link navlink" href="#testimonios">Testimonios</a></li>
+                        <li class="nav-item"><a class="nav-link navlink" href="#contacto">Contacto</a></li>
+                    </ul>
+                    <button id="btn-theme" class="ms-lg-3 my-2 my-lg-0">Cambiar a modo oscuro</button>
+                </div>
+            </div>
         </nav>
-
-        <button id="btn-theme">Cambiar a modo oscuro</button>
-
     </header>
 
     <main>
 
-        <section id="inicio">
-
-            <img id="asclepius" src="images/asclepius_rod.png" alt="Báculo de Ascolepio - Medicina" id="logo">
-
-            <h1 id="titulo">APOTHECARIA</h1>
-
-            <h2>Botica · Remedios · Formulación Magistral</h2>
-
-            <p id="subtitulo">Donde la ciencia antigua y la naturaleza se unen para cuidar tu bienestar.</p>
-
-            <button class="boton">Explorar Remedios</button>
-            <button class="boton">Nuestro Grimorio</button>
-
-        </section>
-
-        <section id="remedios">
-            <h2>Productos Destacados</h2>
-
-
-            <!--Contenedor responsive del grid-->
-            <div class="container">
-
-                <!--Contenedor de fila responsive row-->
-                <div class="row align-items-center text-center">
-                        
-                    <!--Contenedor del grid y sus tarjetas-->
-                    <div id="grid">
-
-                        <!--Contenedor de columna responsive col-->
-                        <div class="col-sm-12 col-md-6">
-
-                            <article class="card">
-                                <h3>Elixir de Caléndula</h3>
-                                <p class="descripcion">Extracto puro de caléndula para regeneración cutánea. Preparado según la
-                                    fórmula magistral del Códice de Avicena.</p>
-                                <button class="boton">Adquirir</button>
-                            </article>
-                        <!-- Aquí se cierra el div col responsive, para cada elemento-->
-                        </div>
-
-                        <!--Contenedor de columna responsive col-->
-                        <div class="col-sm-12 col-md-6">
-
-                            <article class="card">
-                                <h3>Tintura Herbal</h3>
-                                <p class="descripcion">Raíz de valeriana macerada en alcohol de grano. Alivia la tensión y favorece
-                                    el sueño reparador desde tiempos ancestrales.</p>
-                                <button class="boton">Adquirir</button>
-                            </article>
-
-                        </div>
-
-                        <!--Contenedor de columna responsive col-->
-                        <div class="col-sm-12 col-md-6">
-
-                            <article class="card">
-                                <h3>Ungüento de Árnica</h3>
-                                <p class="descripcion">Pomada clásica de árnica montana para golpes, contusiones y dolores
-                                    musculares. Formulación artesanal de alta concentración..</p>
-                                <button class="boton">Adquirir</button>
-                            </article>
-                        </div>
-
-                        <!--Contenedor de columna responsive col-->
-                        <div class="col-sm-12 col-md-6">
-
-                            <article class="card">
-                                <h3>Jarabe de Propóleo</h3>
-                                <p class="descripcion">Propóleo puro con extracto de tomillo y miel de romero. Defensa natural para
-                                    las vías respiratorias en épocas adversas.</p>
-                                <button class="boton">Adquirir</button>
-                            </article>
-                        </div>
-
-                        <!--Contenedor de columna responsive col-->
-                        <div class="col-sm-12 col-md-6">
-
-                            <article class="card">
-                                <h3>Aceite de Onagra</h3>
-                                <p class="descripcion">Prensado en frío, rico en ácido gamma-linolénico. Equilibrio hormonal y salud
-                                    de piel desde la tradición herbolaria europea.</p>
-                                <button class="boton">Adquirir</button>
-                            </article>
-                        </div>
-
-                        <!--Contenedor de columna responsive col-->
-                        <div class="col-sm-12 col-md-6">
-
-                            <article class="card">
-                                <h3>Polvo de Jengibre</h3>
-                                <p class="descripcion">Raíz de jengibre deshidratada y molida, de cultivo ecológico certificado.
-                                    Digestivo, antiemético y fuente de calor interior.</p>
-                                <button class="boton">Adquirir</button>
-                            </article>
-                        </div>
-
-                    </div>
-                    
+        <section id="inicio" class="py-6">
+            <div class="container text-center">
+                <img id="asclepius" src="images/asclepius_rod.png" alt="Báculo de Asclepio - Medicina">
+                <h1 id="titulo">APOTHECARIA</h1>
+                <h2>Botica · Remedios · Formulación Magistral</h2>
+                <p id="subtitulo">Donde la ciencia antigua y la naturaleza se unen para cuidar tu bienestar.</p>
+                <div class="mt-4 d-flex justify-content-center flex-wrap gap-2">
+                    <a href="#remedios" class="boton text-decoration-none">Explorar Remedios</a>
+                    <a href="#grimorio" class="boton text-decoration-none">Nuestro Grimorio</a>
                 </div>
-
             </div>
-
         </section>
 
-        <section id="grimorio">
-            <h2>Nuestro Grimorio</h2>
+        <section id="remedios" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Productos Destacados</h2>
 
-            <p class="pbody">Descubre la historia y el conocimiento ancestral de Apothecaria.</p>
+                <!-- Grid responsive: 1 columna en móvil (col-12) y 2 columnas en PC/tablet (col-md-6) -->
+                <div id="grid" class="row g-4 justify-content-center">
 
-            <p class="pbody">Desde que el Maestro Boticario Don Severino Alcántara abriera sus puertas en la calle del
-                Pergamino en 1742, nuestra botica ha preservado el saber medicinal ancestral. Cada preparado sigue
-                recetas copiadas a mano en nuestro Grimorio de la Salud.</p>
+                    <div class="col-sm-12 col-md-6">
+                        <article class="card h-100">
+                            <h3>Elixir de Caléndula</h3>
+                            <p class="descripcion">Extracto puro de caléndula para regeneración cutánea. Preparado según
+                                la fórmula magistral del Códice de Avicena.</p>
+                            <button class="boton mt-auto">Adquirir</button>
+                        </article>
+                    </div>
 
-            <p class="pbody">Hoy, combinamos esa sabiduría con los más estrictos controles de calidad farmacéutica para
-                ofreceros fórmulas magistrales, plantas medicinales de procedencia certificada y preparados galénicos
-                elaborados en nuestro laboratorio.</p>
+                    <div class="col-sm-12 col-md-6">
+                        <article class="card h-100">
+                            <h3>Tintura Herbal</h3>
+                            <p class="descripcion">Raíz de valeriana macerada en alcohol de grano. Alivia la tensión y
+                                favorece el sueño reparador desde tiempos ancestrales.</p>
+                            <button class="boton mt-auto">Adquirir</button>
+                        </article>
+                    </div>
 
+                    <div class="col-sm-12 col-md-6">
+                        <article class="card h-100">
+                            <h3>Ungüento de Árnica</h3>
+                            <p class="descripcion">Pomada clásica de árnica montana para golpes, contusiones y dolores
+                                musculares. Formulación artesanal de alta concentración..</p>
+                            <button class="boton mt-auto">Adquirir</button>
+                        </article>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6">
+                        <article class="card h-100">
+                            <h3>Jarabe de Propóleo</h3>
+                            <p class="descripcion">Propóleo puro con extracto de tomillo y miel de romero. Defensa
+                                natural para las vías respiratorias en épocas adversas.</p>
+                            <button class="boton mt-auto">Adquirir</button>
+                        </article>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6">
+                        <article class="card h-100">
+                            <h3>Aceite de Onagra</h3>
+                            <p class="descripcion">Prensado en frío, rico en ácido gamma-linolénico. Equilibrio hormonal
+                                y salud de piel desde la tradición herbolaria europea.</p>
+                            <button class="boton mt-auto">Adquirir</button>
+                        </article>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6">
+                        <article class="card h-100">
+                            <h3>Polvo de Jengibre</h3>
+                            <p class="descripcion">Raíz de jengibre deshidratada y molida, de cultivo ecológico
+                                certificado. Digestivo, antiemético y fuente de calor interior.</p>
+                            <button class="boton mt-auto">Adquirir</button>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
         </section>
 
-        <section id="testimonios">
-            <h2>Testimonios</h2>
-
-            <p class="pbody">“Excelente atención y productos de calidad.”</p>
-            <p class="pbody">“Una experiencia única y diferente.”</p>
+        <section id="grimorio" class="py-4">
+            <div class="container">
+                <h2>Nuestro Grimorio</h2>
+                <p class="pbody">Descubre la historia y el conocimiento ancestral de Apothecaria.</p>
+                <p class="pbody">Desde que el Maestro Boticario Don Severino Alcántara abriera sus puertas en la calle
+                    del Pergamino en 1742, nuestra botica ha preservado el saber medicinal ancestral. Cada preparado
+                    sigue recetas copiadas a mano en nuestro Grimorio de la Salud.</p>
+                <p class="pbody">Hoy, combinamos esa sabiduría con los más estrictos controles de calidad farmacéutica
+                    para ofreceros fórmulas magistrales, plantas medicinales de procedencia certificada y preparados
+                    galénicos elaborados en nuestro laboratorio.</p>
+            </div>
         </section>
 
-        <section id="contacto">
-            <h2>Contacto</h2>
+        <section id="testimonios" class="py-4">
+            <div class="container">
+                <h2>Testimonios</h2>
+                <p class="pbody">“Excelente atención y productos de calidad.”</p>
+                <p class="pbody">“Una experiencia única y diferente.”</p>
+            </div>
+        </section>
 
-            <p class="pbody">Dirección: Calle del Pergamino</p>
-            <p class="pbody">Teléfono: 600 000 000</p>
-            <p class="pbody">Email: contacto@apothecaria.com</p>
+        <section id="contacto" class="py-5">
+            <div class="container text-center">
+                <h2>Contacto</h2>
+                <p class="pbody">Dirección: Calle del Pergamino</p>
+                <p class="pbody">Teléfono: 600 000 000</p>
+                <p class="pbody">Email: contacto@apothecaria.com</p>
 
-            <form>
-                <input type="text" placeholder="Nombre">
-                <input type="email" placeholder="Correo">
-                <textarea placeholder="Consulta"></textarea>
-                <button type="submit">Enviar</button>
-            </form>
+                <form>
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="email" placeholder="Correo" required>
+                    <textarea placeholder="Consulta" rows="4" required></textarea>
+                    <button type="submit" class="boton">Enviar</button>
+                </form>
+            </div>
         </section>
 
     </main>
 
     <footer>
-        <div id="pie">
-            <p class="pfoot">© 2026 Apothecaria. Todos los derechos reservados.</p>
-            <div id="cookies">
-                <p class="pfoot">Privacidad</p>
-                <p class="pfoot">Aviso legal</p>
-                <p class="pfoot">Cookies</p>
+        <div id="pie" class="py-4">
+            <div class="container text-center">
+                <p class="pfoot mb-2">© 2026 Apothecaria. Todos los derechos reservados.</p>
+                <div id="cookies" class="d-flex justify-content-center flex-wrap gap-3">
+                    <a href="#" class="pfoot text-decoration-none">Privacidad</a>
+                    <a href="#" class="pfoot text-decoration-none">Aviso legal</a>
+                    <a href="#" class="pfoot text-decoration-none">Cookies</a>
+                </div>
             </div>
         </div>
     </footer>
 
-    <!-- Script Bootstrap JS (con Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-
-    YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Script Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <script src="scripts/script.js"></script>
 
 </body>
