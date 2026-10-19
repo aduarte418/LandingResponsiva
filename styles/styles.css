@@ -100,6 +100,12 @@ h3{
     color: #c9a227;
 }
 
+/*Estilo para la descripción de los productos*/
+.descripcion{
+    font-size: 1.1em;
+    font-family: EB Garamond, serif;
+}
+
 /*Estilo para los botones*/
 .boton{
     background-color: #055704;
