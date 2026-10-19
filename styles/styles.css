@@ -1,3 +1,69 @@
+/*Estilos para el modo oscuro*/
+body.dark-mode {
+    background-color: #211f19;
+
+}
+
+body.dark-mode #inicio {
+    background-color: #211f19;
+
+}
+
+body.dark-mode #grimorio {
+    background-color: #211f19;
+
+}
+
+body.dark-mode #testimonios {
+    background-color: #211f19;
+
+}
+
+body.dark-mode #contacto {
+    background-color: #211f19;
+
+}
+
+body.dark-mode h2 {
+    color: #eee3c9;
+}
+
+body.dark-mode h3 {
+    color: #eee3c9;
+}
+
+body.dark-mode #titulo {
+    color: #eee3c9;
+}
+
+body.dark-mode .pbody {
+    color: #eee3c9;
+}
+
+body.dark-mode .pfoot {
+    color: #eee3c9;
+}
+
+body.dark-mode .descripcion {
+    color: #eee3c9;
+}
+
+body.dark-mode button {
+    background-color: #071608;
+    color: #e5c158;
+}
+
+body.dark-mode .boton:hover {
+    background-color: #448c47;
+    color: #d4af37;
+}
+
+body.dark-mode .boton:active {
+    background-color: #45a049;
+    color: #d4af37;
+}
+
+
 /*Estilo por defecto como base para todos los elementos de la página*/
 * {
     margin: 0.3rem;
@@ -6,15 +72,15 @@
 }
 
 /*Estilo general para el body*/
-body{
+body {
     margin: 0;
     padding: 0;
     background-color: #eee3c9;
-       
+
 }
 
 /*Estilo para la barra de navegación*/
-#barranav{
+#barranav {
     background-color: #055704;
     padding: 10px;
     display: flex;
@@ -23,13 +89,13 @@ body{
     gap: 4em;
     font-family: Cinzel, serif;
     font-size: 1.24em;
-    
+
 }
 
 /*Estilo para los enlaces de la barra de navegación*/
-.navlink{
+.navlink {
     text-decoration: none;
-    color:#c9a227;
+    color: #c9a227;
     padding: 10px;
 }
 
@@ -39,7 +105,7 @@ body{
 }
 
 /*Estilo para la zona inicio que hace de portada de la página*/
-#inicio{
+#inicio {
     background-color: #eee3c9;
     padding: 1.1em 0;
     text-align: center;
@@ -48,20 +114,20 @@ body{
 }
 
 /*Estilo específico para el logo de Asclepio justo encima del título Apothecaria*/
-#asclepius{
+#asclepius {
     width: 2em;
     height: 2em;
 }
 
 /*Estilo para el título principal (Apothecaria)*/
-#titulo{
+#titulo {
     font-size: 3em;
     color: #000;
     font-family: Cinzel, serif;
 }
 
 /*Estilo concreto para el subtítulo*/
-#subtitulo{
+#subtitulo {
     font-size: 1.1em;
     color: #000;
     font-weight: bold;
@@ -69,7 +135,7 @@ body{
 }
 
 /*Estilo para el h2*/
-h2{
+h2 {
     font-family: Cinzel, serif;
     font-size: 1.7em;
     font-weight: bold;
@@ -78,7 +144,7 @@ h2{
 }
 
 /*Estilo para el h3*/
-h3{
+h3 {
     font-size: 1.1em;
     color: #000;
     font-family: Cinzel, serif;
@@ -86,7 +152,7 @@ h3{
 }
 
 /*Estilo general para el texto del body*/
-.pbody{
+.pbody {
     font-size: 1em;
     font-family: EB Garamond, serif;
     color: #000;
@@ -94,20 +160,20 @@ h3{
 }
 
 /*Estilo para el texto del footer*/
-.pfoot{
+.pfoot {
     font-size: 1em;
     font-family: Cinzel, serif;
     color: #c9a227;
 }
 
 /*Estilo para la descripción de los productos*/
-.descripcion{
+.descripcion {
     font-size: 1.1em;
     font-family: EB Garamond, serif;
 }
 
 /*Estilo para los botones*/
-.boton{
+.boton {
     background-color: #055704;
     border: none;
     color: #c9a227;
@@ -130,15 +196,15 @@ h3{
 }
 
 /*Estilo para la sección de productos*/
-#remedios{
-    
+#remedios {
+
     padding: 50px 0;
     text-align: center;
 
 }
 
 /*Estilo para el grid*/
-#grid{
+#grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -150,7 +216,7 @@ h3{
 
 
 /*Estilo para cada elemento del grid (las cartas)*/
-.producto{
+.producto {
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 20px;
@@ -160,7 +226,7 @@ h3{
 
 
 /*Estilo para el texto de cada carta del grid (descripción)*/
-.producto p{
+.producto p {
     font-size: 1em;
     color: #000;
     font-family: EB Garamond, serif;
@@ -168,7 +234,7 @@ h3{
 }
 
 /*Estilo para la zona de historia de la página (llamada grimorio)*/
-#grimorio{
+#grimorio {
     background-color: #eee3c9;
     padding: 1em 0;
     text-align: left;
@@ -176,7 +242,7 @@ h3{
 }
 
 /*Estilo para la zona de reseñas/testimonios*/
-#testimonios{
+#testimonios {
     background-color: #eee3c9;
     margin: 0.2em;
     padding: 1em 0;
@@ -186,7 +252,7 @@ h3{
 
 
 /*Estilo para la zona de contacto*/
-#contacto{
+#contacto {
     background-color: #eee3c9;
     margin: 0.2em;
     padding: 0.5em 0;
@@ -195,7 +261,7 @@ h3{
 }
 
 /*Estilo para el formulario de contacto*/
-form{
+form {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -205,7 +271,7 @@ form{
 }
 
 /*Estilo para el pie de página*/
-#pie{
+#pie {
     background-color: #013600;
     color: #c9a227;
     display: flex;
@@ -218,13 +284,10 @@ form{
 }
 
 /*Estilo para las cookies en el pie de página*/
-#cookies{
+#cookies {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 1em;
     font-size: 0.9em;
 }
-
-
-
