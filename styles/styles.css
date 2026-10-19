@@ -1,38 +1,50 @@
-/*Estilos para el modo oscuro*/
+/* Fondo general y secciones */
 body.dark-mode {
     background-color: #211f19;
-
+    color: #eee3c9;
 }
 
 body.dark-mode #inicio {
     background-color: #211f19;
-
+    background: linear-gradient(to bottom, #2c2820, #211f19);
 }
 
-body.dark-mode #grimorio {
-    background-color: #211f19;
-
-}
-
-body.dark-mode #testimonios {
-    background-color: #211f19;
-
-}
-
+body.dark-mode #remedios,
+body.dark-mode #grimorio,
+body.dark-mode #testimonios,
 body.dark-mode #contacto {
     background-color: #211f19;
+}
 
+/* Barra de navegación */
+body.dark-mode #barranav {
+    background-color: #0a180d;
+    border-bottom: 1px solid #1f3322;
+}
+
+body.dark-mode .navlink {
+    color: #d4af37;
+}
+
+body.dark-mode .navlink:hover {
+    background-color: #17381b;
+    color: #ffffff;
+}
+
+/* Títulos y textos */
+body.dark-mode #titulo {
+    color: #eee3c9;
+}
+
+body.dark-mode #subtitulo {
+    color: #c5bba6;
 }
 
 body.dark-mode h2 {
-    color: #eee3c9;
+    color: #d4af37;
 }
 
 body.dark-mode h3 {
-    color: #eee3c9;
-}
-
-body.dark-mode #titulo {
     color: #eee3c9;
 }
 
@@ -41,26 +53,66 @@ body.dark-mode .pbody {
 }
 
 body.dark-mode .pfoot {
-    color: #eee3c9;
+    color: #d4af37;
 }
 
 body.dark-mode .descripcion {
+    color: #c5bba6;
+}
+
+/* Tarjetas de productos */
+body.dark-mode .card,
+body.dark-mode .producto {
+    background-color: #2b2720 !important;
+    border: 1px solid #3d372e !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .card h3,
+body.dark-mode .producto h3 {
     color: #eee3c9;
 }
 
-body.dark-mode button {
+/* Botones en modo oscuro */
+body.dark-mode button,
+body.dark-mode .boton {
     background-color: #071608;
     color: #e5c158;
+    border: 1px solid #2a5a2f;
 }
 
-body.dark-mode .boton:hover {
-    background-color: #448c47;
-    color: #d4af37;
+body.dark-mode .boton:hover,
+body.dark-mode button:hover {
+    background-color: #215c26;
+    color: #ffffff;
 }
 
-body.dark-mode .boton:active {
+body.dark-mode .boton:active,
+body.dark-mode button:active {
     background-color: #45a049;
+    color: #ffffff;
+}
+
+/* Formulario de contacto */
+body.dark-mode form input,
+body.dark-mode form textarea {
+    background-color: #1a1813;
+    color: #eee3c9;
+    border: 1px solid #3d372e;
+    border-radius: 4px;
+    padding: 8px 12px;
+}
+
+body.dark-mode form input::placeholder,
+body.dark-mode form textarea::placeholder {
+    color: #8c8373;
+}
+
+/* Pie de página */
+body.dark-mode #pie {
+    background-color: #0a140b;
     color: #d4af37;
+    border-top: 1px solid #1a2a1c;
 }
 
 
@@ -75,7 +127,7 @@ body.dark-mode .boton:active {
 body {
     margin: 0;
     padding: 0;
-    background-color: #eee3c9;
+    background-color: #ffe5a8;
 
 }
 
@@ -195,6 +247,30 @@ h3 {
 
 }
 
+/*Estilo para el botón de cambio de tema (modo oscuro / claro)*/
+#btn-theme {
+    background-color: #055704;
+    color: #c9a227;
+    border: 1.5px solid #c9a227;
+    padding: 8px 20px;
+    font-family: Cinzel, serif;
+    font-size: 0.9em;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 12px auto;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+#btn-theme:hover {
+    background-color: #45a049;
+    color: #ffffff;
+    border-color: #45a049;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 /*Estilo para la sección de productos*/
 #remedios {
 
@@ -216,16 +292,19 @@ h3 {
 
 
 /*Estilo para cada elemento del grid (las cartas)*/
+.card,
 .producto {
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fdfaf3;
 }
 
 
 /*Estilo para el texto de cada carta del grid (descripción)*/
+.card p,
 .producto p {
     font-size: 1em;
     color: #000;
