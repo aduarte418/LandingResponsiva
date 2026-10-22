@@ -1,410 +1,420 @@
-/* Fondo general y secciones */
+@charset "UTF-8";
+/* Fondo general y secciones */ /*Aquí se llama a la función nativa*/
 body.dark-mode {
-    background-color: #211f19;
-    color: #eee3c9;
+  background-color: #211f19;
+  color: #eee3c9;
 }
 
 body.dark-mode #inicio {
-    background-color: #211f19;
-    background: linear-gradient(to bottom, #2c2820, #211f19);
+  background-color: #211f19;
+  background: linear-gradient(to bottom, #2c2820, #211f19);
 }
 
 body.dark-mode #remedios,
 body.dark-mode #grimorio,
 body.dark-mode #testimonios,
 body.dark-mode #contacto {
-    background-color: #211f19;
+  background-color: #211f19;
 }
 
 /* Barra de navegación */
 body.dark-mode #barranav {
-    background-color: #0a180d;
-    border-bottom: 1px solid #1f3322;
+  background-color: #0a180d;
+  border-bottom: 1px solid #1f3322;
 }
 
 body.dark-mode #barranav .nav-link,
 body.dark-mode .navlink {
-    color: #d4af37;
+  color: #d4af37;
 }
 
 body.dark-mode #barranav .nav-link:hover,
 body.dark-mode #barranav .nav-link:focus,
 body.dark-mode .navlink:hover {
-    background-color: #17381b;
-    color: #ffffff;
+  background-color: #17381b;
+  color: #ffffff;
 }
 
 body.dark-mode #barranav .navbar-toggler {
-    border-color: #d4af37;
+  border-color: #d4af37;
 }
 
 /* Títulos y textos */
 body.dark-mode #titulo {
-    color: #eee3c9;
+  color: #eee3c9;
 }
 
 body.dark-mode #subtitulo {
-    color: #c5bba6;
+  color: #c5bba6;
 }
 
 body.dark-mode h2 {
-    color: #d4af37;
+  color: #d4af37;
 }
 
 body.dark-mode h3 {
-    color: #eee3c9;
+  color: #eee3c9;
 }
 
 body.dark-mode .pbody {
-    color: #eee3c9;
+  color: #eee3c9;
 }
 
 body.dark-mode .pfoot {
-    color: #d4af37;
+  color: #d4af37;
 }
 
 body.dark-mode .descripcion {
-    color: #c5bba6;
+  color: #c5bba6;
 }
 
 /* Tarjetas de productos */
 body.dark-mode .card,
 body.dark-mode .producto {
-    background-color: #2b2720 !important;
-    border: 1px solid #3d372e !important;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  background-color: #2b2720 !important;
+  border: 1px solid #3d372e !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 body.dark-mode .card h3,
 body.dark-mode .producto h3 {
-    color: #eee3c9;
+  color: #eee3c9;
 }
 
 /* Botones en modo oscuro */
 body.dark-mode button,
 body.dark-mode .boton {
-    background-color: #071608;
-    color: #e5c158;
-    border: 1px solid #2a5a2f;
+  background-color: #071608;
+  color: #e5c158;
+  border: 1px solid #2a5a2f;
 }
 
 body.dark-mode .boton:hover,
 body.dark-mode button:hover {
-    background-color: #215c26;
-    color: #ffffff;
+  background-color: #215c26;
+  color: #ffffff;
 }
 
 body.dark-mode .boton:active,
 body.dark-mode button:active {
-    background-color: #45a049;
-    color: #ffffff;
+  background-color: #45a049;
+  color: #ffffff;
 }
 
 body.dark-mode #btn-theme {
-    background-color: #143818;
-    color: #e5c158;
-    border-color: #e5c158;
+  background-color: #143818;
+  color: #e5c158;
+  border-color: #e5c158;
 }
 
 body.dark-mode #btn-theme:hover {
-    background-color: #215c26;
-    color: #ffffff;
+  background-color: #215c26;
+  color: #ffffff;
 }
 
 /* Formulario de contacto */
 body.dark-mode form input,
 body.dark-mode form textarea {
-    background-color: #1a1813;
-    color: #eee3c9;
-    border: 1px solid #3d372e;
-    border-radius: 4px;
-    padding: 10px 14px;
+  background-color: #1a1813;
+  color: #eee3c9;
+  border: 1px solid #3d372e;
+  border-radius: 4px;
+  padding: 10px 14px;
 }
 
 /* Pie de página */
 body.dark-mode #pie {
-    background-color: #0a140b;
-    color: #d4af37;
-    border-top: 1px solid #1a2a1c;
+  background-color: #0a140b;
+  color: #d4af37;
+  border-top: 1px solid #1a2a1c;
 }
-
 
 /* Imágenes responsivas */
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Estilo general para el body */
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #ffe5a8;
-    font-family: 'EB Garamond', serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffe5a8;
+  font-family: "EB Garamond", serif;
 }
 
 /* Estilo para la barra de navegación */
 #barranav {
-    background-color: #055704;
-    padding: 10px 0;
-    font-family: Cinzel, serif;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  background-color: #055704;
+  padding: 10px 0;
+  font-family: Cinzel, serif;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
 }
 
 #barranav .navbar-brand {
-    color: #c9a227;
-    font-family: Cinzel, serif;
-    font-size: 1.3em;
-    font-weight: bold;
+  color: #c9a227;
+  font-family: Cinzel, serif;
+  font-size: 1.3em;
+  font-weight: bold;
 }
 
 #barranav .navbar-brand:hover {
-    color: #ffffff;
+  color: #ffffff;
 }
 
-/* Enlaces de navegación */
+/* Enlaces de navegación */ /*Aquí se aplica la función en el padding*/
 #barranav .nav-link,
 .navlink {
-    text-decoration: none;
-    color: #c9a227 !important;
-    padding: 8px 16px;
-    font-family: Cinzel, serif;
-    font-size: 1.05em;
+  text-decoration: none;
+  color: #c9a227 !important;
+  padding: 8px 16px;
+  font-family: Cinzel, serif;
+  font-size: 1.05em;
 }
 
 #barranav .nav-link:hover,
 #barranav .nav-link:focus,
 .navlink:hover {
-    background-color: #45a049;
-    color: #ffffff;
-    border-radius: 4px;
+  background-color: #45a049;
+  color: #ffffff;
+  border-radius: 4px;
 }
 
 #barranav .navbar-toggler:focus {
-    box-shadow: 0 0 0 0.2rem rgba(201, 162, 39, 0.35);
+  box-shadow: 0 0 0 0.2rem rgba(201, 162, 39, 0.35);
 }
 
 /* Botón para alternar tema (modo oscuro / claro) */
 #btn-theme {
-    background-color: #055704;
-    color: #c9a227;
-    border: 1.5px solid #c9a227;
-    padding: 6px 16px;
-    font-family: Cinzel, serif;
-    font-size: 0.85em;
-    font-weight: bold;
-    border-radius: 20px;
+  background-color: #055704;
+  color: #c9a227;
+  border: 1.5px solid #c9a227;
+  padding: 6px 16px;
+  font-family: Cinzel, serif;
+  font-size: 0.85em;
+  font-weight: bold;
+  border-radius: 20px;
 }
 
 #btn-theme:hover {
-    background-color: #45a049;
-    color: #ffffff;
-    border-color: #45a049;
+  background-color: #45a049;
+  color: #ffffff;
+  border-color: #45a049;
 }
 
 /* Estilo para la zona inicio que hace de portada de la página */
 #inicio {
-    background-color: #eee3c9;
-    padding: 3em 1em;
-    text-align: center;
-    font-family: Cinzel, serif;
-    background: linear-gradient(to bottom, #fcf7eb, #eee3c9);
+  background-color: #eee3c9;
+  padding: 3em 1em;
+  text-align: center;
+  font-family: Cinzel, serif;
+  background: linear-gradient(to bottom, #fcf7eb, #eee3c9);
 }
 
 /* Logo de Asclepio justo encima del título Apothecaria */
 #asclepius {
-    width: 2.7em;
-    height: 2.7em;
-    margin-bottom: 0.6rem;
-    margin-top: 3rem;
+  width: 2.7em;
+  height: 2.7em;
+  margin-bottom: 0.6rem;
+  margin-top: 3rem;
 }
 
-/* Título principal con tamaño responsive usando clamp() */
+/* Título principal con tamaño responsive */
 #titulo {
-    color: #000;
-    font-family: Cinzel, serif;
-    margin: 0.2em 0;
+  color: #000;
+  font-family: Cinzel, serif;
+  margin: 0.2em 0;
 }
 
 /* Subtítulo */
 #subtitulo {
-    color: #000;
-    font-weight: bold;
-    margin: 0.8em auto;
-    max-width: 700px;
+  color: #000;
+  font-weight: bold;
+  margin: 0.8em auto;
+  max-width: 700px;
 }
 
 /* Estilo para h2 */
 h2 {
-    font-family: Cinzel, serif;
-    font-weight: bold;
-    color: #000;
-    margin-bottom: 0.5em;
+  font-family: Cinzel, serif;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 0.5em;
 }
 
 /* Estilo para h3 */
 h3 {
-    font-size: 1.15em;
-    color: #000;
-    font-family: Cinzel, serif;
-    margin-bottom: 0.4em;
+  font-size: 1.15em;
+  color: #000;
+  font-family: Cinzel, serif;
+  margin-bottom: 0.4em;
 }
 
 /* Estilo general para el texto del body */
 .pbody {
-    font-size: 1.05em;
-    font-family: 'EB Garamond', serif;
-    color: #000;
-    line-height: 1.6;
+  font-size: 1.05em;
+  font-family: "EB Garamond", serif;
+  color: #000;
+  line-height: 1.6;
 }
 
 /* Estilo para el texto del footer */
 .pfoot {
-    font-size: 0.95em;
-    font-family: Cinzel, serif;
-    color: #c9a227;
+  font-size: 0.95em;
+  font-family: Cinzel, serif;
+  color: #c9a227;
 }
 
 /* Estilo para la descripción de los productos */
 .descripcion {
-    font-size: 1.05em;
-    font-family: 'EB Garamond', serif;
-    line-height: 1.5;
-    margin-bottom: 1em;
+  font-size: 1.05em;
+  font-family: "EB Garamond", serif;
+  line-height: 1.5;
+  margin-bottom: 1em;
 }
 
 /* Estilo para los botones */
+/* Aquí se llama al mixin que contiene los estilos reutilizables */
 .boton {
-    background-color: #055704;
-    border: none;
-    color: #c9a227;
-    padding: 12px 28px;
-    font-family: Cinzel, serif;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 15px;
-    margin: 6px 4px;
-    cursor: pointer;
-    border-radius: 4px;
+  background-color: #055704;
+  color: #c9a227;
+  border: none;
+  padding: 12px 28px;
+  font-family: Cinzel, serif;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 6px 4px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  padding: 12px 28px;
+  font-family: Cinzel, serif;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 6px 4px;
+  cursor: pointer;
+  border-radius: 4px;
 }
 
 .boton:hover {
-    background-color: #45a049;
-    color: #ffffff;
+  background-color: #45a049;
+  color: #ffffff;
 }
 
 /* Sección de productos */
 #remedios {
-    padding: 50px 0;
-    text-align: center;
+  padding: 50px 0;
+  text-align: center;
 }
 
 /* Contenedor del grid de productos */
 #grid {
-    padding: 10px 0;
+  padding: 10px 0;
 }
 
 /* Elementos del grid (las cartas) con altura completa y distribución vertical */
 .card,
 .producto {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 22px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-    background-color: #fdfaf3;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 22px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  background-color: #fdfaf3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .card h3 {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 /* Zona de historia (grimorio) */
 #grimorio {
-    background-color: #eee3c9;
-    padding: 30px 0;
+  background-color: #eee3c9;
+  padding: 30px 0;
 }
 
 /* Zona de reseñas/testimonios */
 #testimonios {
-    background-color: #eee3c9;
-    padding: 30px 0;
+  background-color: #eee3c9;
+  padding: 30px 0;
 }
 
 /* Zona de contacto */
 #contacto {
-    background-color: #eee3c9;
-    padding: 35px 0;
+  background-color: #eee3c9;
+  padding: 35px 0;
 }
 
 /* Formulario de contacto responsive */
 form {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    max-width: 500px;
-    margin: 20px auto 0 auto;
-    gap: 1em;
-    width: 100%;
-    padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  max-width: 500px;
+  margin: 20px auto 0 auto;
+  gap: 1em;
+  width: 100%;
+  padding: 0 10px;
 }
 
 form input,
 form textarea {
-    width: 100%;
-    padding: 10px 14px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-family: 'EB Garamond', serif;
-    font-size: 1.05rem;
-    background-color: #ffffff;
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: "EB Garamond", serif;
+  font-size: 1.05rem;
+  background-color: #ffffff;
 }
 
 form button {
-    align-self: center;
-    min-width: 150px;
+  align-self: center;
+  min-width: 150px;
 }
 
 /* Pie de página */
 #pie {
-    background-color: #013600;
-    color: #c9a227;
-    font-family: Cinzel, serif;
-    padding: 1.5em 1em;
+  background-color: #013600;
+  color: #c9a227;
+  font-family: Cinzel, serif;
+  padding: 1.5em 1em;
 }
 
 #cookies {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1.5em;
-    margin-top: 0.8em;
-    font-size: 0.9em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  margin-top: 0.8em;
+  font-size: 0.9em;
 }
-
-
 
 @media (max-width: 768px) {
-    #inicio {
-        padding: 2em 1em;
-    }
-
-    .boton {
-        padding: 10px 20px;
-        font-size: 14px;
-    }
-
-    #remedios,
-    #grimorio,
-    #testimonios,
-    #contacto {
-        padding: 25px 0;
-    }
+  #inicio {
+    padding: 2em 1em;
+  }
+  .boton {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  #remedios,
+  #grimorio,
+  #testimonios,
+  #contacto {
+    padding: 25px 0;
+  }
 }
+
+/*# sourceMappingURL=styles.css.map */
